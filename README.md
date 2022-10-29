@@ -1,6 +1,6 @@
 # Detecting_Drowsiness_based_on_Camera_Sensor
 
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Driver%20Drowsiness%20Detection%20project%20on%20Github%20&url=https://github.com/mohitwildbeast/Driver-Drowsiness-Detector/&hashtags=python,drowsiness-detector,opencv,computer-vision,machine-learning,deep-learning)  [![GitHub stars](https://img.shields.io/github/stars/mohitwildbeast/Driver-Drowsiness-Detector.svg?style=plastic)](https://github.com/mohitwildbeast/Driver-Drowsiness-Detector/stargazers)  [![GitHub forks](https://img.shields.io/github/forks/mohitwildbeast/Driver-Drowsiness-Detector.svg?style=plastic)](https://github.com/mohitwildbeast/Driver-Drowsiness-Detector/network)
+
 
 
 
@@ -9,20 +9,20 @@ This program is used to detect drowsiness for any given person. In this program 
 The program contains 3 files, which are
 ## Files
  - **face_and_eye_detector_single_image.py** - Detects face and eye from a single image.
- Demo-
- 
-|  ![Test Image](https://github.com/mohitwildbeast/Driver-Drowsiness-Detector/blob/master/images/test.jpeg)| ![Result Image](https://github.com/mohitwildbeast/Driver-Drowsiness-Detector/blob/master/images/result_face_detector_single_image.png) |
-|---|---|
 
- - **face_and_eye_detector_webcam_video.py** - Detects face and eye in a webcam feed by user![Webcam Face and Eye Detection](https://github.com/mohitwildbeast/Driver-Drowsiness-Detector/blob/master/images/webcam_face_eye_detect.jpeg)
+ - **face_and_eye_detector_webcam_video.py** - Detects face and eye in a webcam feed by user
+ 
+ ![1](https://user-images.githubusercontent.com/79044490/198834999-d9aa86b0-5c76-4a65-a919-bc47f97dc8fb.png)
+ 
  - **drowsiness_detect.py**- This script detects if person is drowsy or not using webcam video feed
 
-> DEMO
-![Drowsiness Detection Demo](https://github.com/mohitwildbeast/Driver-Drowsiness-Detector/blob/master/images/drowsiness_detector_demo.gif)
+![2](https://user-images.githubusercontent.com/79044490/198835007-c5864d21-78d6-4024-ae65-9caa0a04d6c7.png)
+
+
  
  ## Requirements
-> 
-> IMPORTANT
+ 
+IMPORTANT
 
   Download `shape_predictor_68_face_landmarks.dat.bz2` from [Shape Predictor 68 features](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2) 
   Extract the file in the project folder using 
