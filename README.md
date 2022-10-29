@@ -31,10 +31,10 @@ IMPORTANT
 
     numpy==1.15.2
 	dlib==19.16.0
-	pygame==1.9.4
-	imutils==0.5.1
+	pygame
+	imutils
 	opencv_python==3.4.3.18
-	scipy==1.1.0
+	scipy
 Use `pip install -r requirements.txt`to install the given requirements.
 
 ## Usage
