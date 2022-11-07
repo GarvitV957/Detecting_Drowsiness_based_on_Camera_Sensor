@@ -25,11 +25,20 @@ The program contains 3 files, which are
 IMPORTANT
 
     numpy==1.15.2
-	dlib==19.16.0
-	pygame
-	imutils
-	opencv_python==3.4.3.18
-	scipy
+    dlib==19.16.0
+    pygame==1.9.4
+    imutils==0.5.1
+    opencv_python==3.4.3.18
+    streamlit
+    secrets
+    datetime
+    pandas
+    PIL
+    image
+    scipy
+    imutils
+    pygame
+
 Use `pip install -r requirements.txt`to install the given requirements.
 
 ## Usage
