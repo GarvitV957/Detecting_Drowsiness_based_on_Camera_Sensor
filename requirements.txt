@@ -26,8 +26,5 @@ streamlit
 choice
 datetime
 Image
-os
 time 
-face_utils
-dlib
 sqlite3
