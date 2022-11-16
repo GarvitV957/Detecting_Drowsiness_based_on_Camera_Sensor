@@ -1,7 +1,7 @@
 absl-py                   ==1.1.0                 
 alabaster                 ==0.7.12        
 altair                    ==4.2.0                 
-anaconda                      
+anaconda                  ==22.9.0  
 anaconda-client           ==1.7.2         
 anaconda-navigator        ==2.2.0         
 anaconda-project          ==0.8.4         
@@ -23,7 +23,7 @@ backports-zoneinfo        ==0.2.1
 backports.functools_lru_cache ==1.6.1         
 backports.shutil_get_terminal_size ==1.0.0         
 backports.tempfile        ==1.0           
-backports.weakref         ==1.0.post1     
+backports.weakref         ==1.0   
 bcrypt                    ==3.2.0         
 beautifulsoup4            ==4.9.3         
 bitarray                  ==1.6.1         
@@ -59,7 +59,7 @@ conda-repo-cli            ==1.0.4
 conda-token               ==0.3.0         
 conda-verify              ==3.4.2         
 console_shortcut          ==0.1.1         
-contextlib2               ==0.6.0.post1   
+contextlib2               ==0.6.0  
 cryptography              ==3.4.7         
 curl                      ==7.71.1        
 cycler                    ==0.10.0        
@@ -312,7 +312,7 @@ python-libarchive-c       ==2.9
 pyttsx3                   ==2.90                  
 pytweening                ==1.0.3                 
 pytz                      ==2020.1        
-pytz-deprecation-shim     ==0.1.0.post0           
+pytz-deprecation-shim     ==0.1.0          
 pywavelets                ==1.1.1         
 pywhatkit                 ==4.7                   
 pywin32                   ==227           
