@@ -21,8 +21,8 @@ opencv_python==4.6.0.66
 pandas==1.0.5
 Pillow==9.3.0
 pygame==2.1.2
-scipy==1.5.1
-streamlit==1.9.2
+scipy
+streamlit
 secrets
 choice
 datetime
