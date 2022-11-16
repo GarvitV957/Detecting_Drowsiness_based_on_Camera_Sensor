@@ -25,7 +25,6 @@ scipy
 streamlit
 choice
 datetime
-PIL
 Image
 os
 time 
