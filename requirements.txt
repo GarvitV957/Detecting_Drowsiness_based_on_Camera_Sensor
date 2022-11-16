@@ -26,5 +26,4 @@ streamlit
 choice
 datetime
 Image
-time 
 sqlite3
