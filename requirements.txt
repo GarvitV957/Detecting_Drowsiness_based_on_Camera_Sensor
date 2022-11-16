@@ -1,7 +1,7 @@
 absl-py                   ==1.1.0                 
 alabaster                 ==0.7.12        
 altair                    ==4.2.0                 
-anaconda                  ==custom        
+anaconda                      
 anaconda-client           ==1.7.2         
 anaconda-navigator        ==2.2.0         
 anaconda-project          ==0.8.4         
