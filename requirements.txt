@@ -23,7 +23,6 @@ Pillow==9.3.0
 pygame==2.1.2
 scipy
 streamlit
-secrets
 choice
 datetime
 PIL
