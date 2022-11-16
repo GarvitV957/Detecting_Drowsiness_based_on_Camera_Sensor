@@ -1,4 +1,4 @@
- name: minimal-streamlit-example
+name: minimal-streamlit-example
 channels:
 - defaults
 - conda-forge
