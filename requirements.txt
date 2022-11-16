@@ -14,8 +14,7 @@ async_generator
 atomicwrites                  
 attrs                         
 autopep8 
-CMake
-dlib
+dlib==19.24.0
 imutils
 numpy
 opencv_python
