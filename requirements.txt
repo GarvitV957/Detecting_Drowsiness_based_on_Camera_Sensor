@@ -2,8 +2,7 @@ absl-py
 alabaster                     
 altair                                
 anaconda                  
-anaconda-client                           
-anaconda-project              
+anaconda-client                                       
 argh                          
 argon2-cffi                   
 asgiref                               
