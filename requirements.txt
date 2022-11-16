@@ -13,7 +13,8 @@ astunparse
 async_generator               
 atomicwrites                  
 attrs                         
-autopep8                      
+autopep8 
+CMake
 dlib
 imutils
 numpy
