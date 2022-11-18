@@ -38,7 +38,6 @@ After successful sign-up, user has to login into the system, and must select the
 4.	Whenever the alerting/buzzer sound is played, entry for time, e and Username is filled in Warning page. Later, if user wants to see the time of warnings, the user can go to warning page and can find time, date of every warning of a user.
 
 ![9](https://user-images.githubusercontent.com/79044490/202721343-3d4971ea-d7c3-468c-bc72-005fbf9e0bff.png)
-![10](https://user-images.githubusercontent.com/79044490/202721371-8e731d9f-3e41-42e5-961d-9ee3534e3605.png)
 
  
  ## Requirements
@@ -60,9 +59,23 @@ Use `pip install -r requirements.txt`to install the given requirements.
 ![image](https://user-images.githubusercontent.com/79044490/202812172-41c62f89-ed68-42da-9300-1f1fdc609a23.png)
 
 
-## Usage
+## Below are the steps of Installation:
 
-### Drowsiness Detection
-Run script using:
+To run this website on local system, need to follow the below steps one after the other.
+1.	First of all clone (https://github.com/Pranav-Programmer/Detecting_Drowsiness_based_on_Camera_Sensor) this GitHub repository on the local system by using (git clone https://github.com/Pranav-Programmer/Detecting_Drowsiness_based_on_Camera_Sensor) this command, if there is any difficulty to run the command on local system then just download the zip file from GitHub and extract it into any empty folder.
+
+2.	Once the repository gets cloned or extracted then next step is to install python on local system, just download python file suitable for your system from this (https://www.python.org/downloads/ ) link.
+
+3.	After the installation of python, we need to install anaconda to run the streamlit library on our local system. So, download it according to your system from (https://www.anaconda.com/products/distribution) this links. 
+
+4.	After that we need to install all the python library on our local system. Go to (https://cmake.org/download/) this link and download cmake file for your system and install it after that and give it a path after installation. There is a requirements.txt file in project repository, just run (pip install -r requirements.txt) in the same project folder where project repository is cloned or extracted this will install all the required python library in local system.
+
+5.	Once you done all this, run this project by using (streamlit run Detecting_Drowsiness.py) this this command. This command run this project on browser, and it generates one network link which can be send to other to run the same website while your connected with network.
+
+Run this project using:
 
     streamlit run drowsiness_detect.py
+    
+## Below are the steps of Working:
+
+![10](https://user-images.githubusercontent.com/79044490/202721371-8e731d9f-3e41-42e5-961d-9ee3534e3605.png)
