@@ -41,8 +41,6 @@ After successful sign-up, user has to login into the system, and must select the
 
  
  ## Requirements
- 
-IMPORTANT
 
     dlib==19.24.0
     imutils==0.5.3
