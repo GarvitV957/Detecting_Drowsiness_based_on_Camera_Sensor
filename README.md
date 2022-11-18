@@ -90,3 +90,12 @@ We plan to further work on the project by adding a sensor to track the heart rat
 
 Same model and techniques can be used for various other uses like Netflix and other streaming services can detect when the user is asleep and stop the video accordingly. It can also be used in application that prevents user from sleeping.
 
+ ## contributors
+
+    Pranav Dharme
+    Garvit Verma
+    Dev Prajapat	
+    Devansh Agrawal
+    Ujjawal Khadanga
+    Akhil Dekarla
+    Shreesha
