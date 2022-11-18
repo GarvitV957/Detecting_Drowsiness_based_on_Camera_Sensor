@@ -79,3 +79,14 @@ Run this project using:
 ## Below are the steps of Working:
 
 ![10](https://user-images.githubusercontent.com/79044490/202721371-8e731d9f-3e41-42e5-961d-9ee3534e3605.png)
+
+##    Conclusion
+
+It completely meets the objectives and requirements of the system. The framework has achieved an unfaltering state where all the bugs have been disposed of. The framework cognizant clients who are familiar with the framework and comprehend its focal points and the fact that it takes care of the issue of stressing out for individuals having fatigue-related issues to inform them about the drowsiness level while driving.
+
+The model can be improved incrementally by using other parameters like blink rate, yawning, state of the car, etc. If all these parameters are used it can improve the accuracy by a lot. 
+
+We plan to further work on the project by adding a sensor to track the heart rate in order to prevent accidents caused due to sudden heart attacks to drivers. 
+
+Same model and techniques can be used for various other uses like Netflix and other streaming services can detect when the user is asleep and stop the video accordingly. It can also be used in application that prevents user from sleeping.
+
