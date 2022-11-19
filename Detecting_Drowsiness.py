@@ -15,19 +15,20 @@ from imutils import face_utils
 import pygame #For playing sound
 import dlib
 import sqlite3
+import Database
 
 st.markdown("""
 <div class="container" style="background-color: #33FFFF; width: 800px; ">
     <nav class="navbar navbar-expand-lg bg-light" style="background-color: #33FFFF">
-      <div class="container-fluid" style="background-color: #33FFFF">
+      <div class="container-fluid" style="background-color: #ffffff; border: 1px solid white; opacity: 0.6;">
         <a class="navbar-brand" href="index.php"></a> <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top"><i style="color: black;" class="fa-solid fa-bars"></i></button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" style="color: #000; font-weight: bold; margin-right: 20px;"><img src="https://img.icons8.com/fluency-systems-filled/48/000000/about-us-male.png" style="width: 24px;"/>@--____________________ Detecting Drowsiness based on Camera Sensor _____________________--</a>
+              <a class="nav-link" style="color: Green; font-weight: bold; margin-right: 20px;"><img src="https://img.icons8.com/fluency-systems-filled/48/000000/about-us-male.png" style="width: 24px;"/>@--____________________ Detecting Drowsiness based on Camera Sensor _____________________--</a>
             </li>
           </ul>
         </div>
@@ -47,29 +48,9 @@ hhide_st_style = """
             """
 st.markdown(hhide_st_style, unsafe_allow_html=True) #hide streamlit menu
 
-conn = sqlite3.connect('data.db')
-c = conn.cursor()
-def create_usertable():
-    c.execute('CREATE TABLE IF NOT EXISTS userstable(username TEXT, password TEXT)')
-
-def add_userdata(username,password) :
-    c.execute('INSERT INTO userstable(username,password) VALUES (?,?)',(username, password))
-    conn. commit ( )
-
-def login_user (username,password):
-    c.execute('SELECT * FROM userstable WHERE username =? AND password = ?',(username,password))
-    data = c.fetchall()
-    return data
-
-def view_all_users(): 
-    c.execute( 'SELECT * FROM userstable')
-    data = c.fetchall()
-    return data
+db = Database.Database()
 
 def main():
-    """Simple Login App"""
-    #st.title("Simple Login App")
-
 
     col1, col2, col3 = st.columns(3) #columns
     menu = ["HOME","Signup","Login","Warnings", "Know More"] #menu
@@ -86,9 +67,9 @@ def main():
 
         username = st.sidebar.text_input("User Name")
         password = st.sidebar.text_input("Password",type='password')
-        if st.sidebar.checkbox("Login"):
-            create_usertable()
-            result = login_user(username, password)
+        if st.sidebar.button("Login"):
+            db.create_usertable()
+            result = db.login_user(username, password)
             if result: 
               
                 st.success("Logged In as {}".format(username))
@@ -195,6 +176,8 @@ def main():
                    pass
             else:
                 st.warning("Incorrect Username/Password")
+        if st.sidebar.button("Log Out"):
+              st.subheader(" ")
 
     elif choice == "Signup" :
         st.subheader( "Create New Account")
@@ -280,8 +263,8 @@ def main():
                           cv2.waitKey(1)
 
         if st.button("Signup"):
-            create_usertable( )
-            add_userdata(new_user, new_password)
+            db.create_usertable( )
+            db.add_userdata(new_user, new_password)
             st.success("You have successfully created an valid Account")
             st.info("Go to Login Menu to login")
 
@@ -295,8 +278,8 @@ def main():
     
     elif choice == 'HOME':
         st.markdown("""
-    <div class="container" style="background-color: #33FFFF; width: 800px; ">
-    <nav class="navbar navbar-expand-lg bg-light" style="background-color: #33FFFF">
+    <div class="container" style="background-color: #33FFFF00; width: 800px; ">
+    <nav class="navbar navbar-expand-lg bg-light" style="background-color: #33FFFF00">
       <div class="container-fluid" style="background-color: #33FFFF">
         <a class="navbar-brand" href="index.php"></a> <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top"><i style="color: black;" class="fa-solid fa-bars"></i></button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -305,7 +288,7 @@ def main():
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" style="color: #000; font-weight: bold; margin-right: 20px;">@--____________________ Detecting Drowsiness based on Camera Sensor _____________________--</a>
+              <a class="nav-link" style="color: Green; font-weight: bold; margin-right: 20px;">@--____________________ Detecting Drowsiness based on Camera Sensor _____________________--</a>
             </li>
           </ul>
         </div>
