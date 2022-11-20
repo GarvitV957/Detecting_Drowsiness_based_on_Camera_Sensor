@@ -63,19 +63,15 @@ def main():
     if choice == "Home" :
         st.subheader("Home")
     elif choice == "Login" :
-        st.subheader("Login To Start Capturing")
+      st.subheader("Login Section")
 
-        username = st.sidebar.text_input("User Name")
-        password = st.sidebar.text_input("Password",type='password')
-        if st.sidebar.button("Login"):
+      username = st.sidebar.text_input("User Name")
+      password = st.sidebar.text_input("Password",type='password')
+      if st.sidebar.checkbox("Login"):
             db.create_usertable()
             result = db.login_user(username, password)
             if result: 
-              
-                st.success("Logged In as {}".format(username))
-                st.markdown("<h2 style='text-align: center; color: black;'>CAMERA FRAME</h2>", unsafe_allow_html=True) #title
-                with col1: #column 1
-                    run = st.checkbox("START / STOP") #checkbox
+                run = st.checkbox("START / STOP") #checkbox
                 if run == True:
                   
                   #Minimum threshold of eye aspect ratio below which alarm is triggerd
@@ -164,7 +160,7 @@ def main():
                                         myDataList = f.readlines()
                                         dtString = now.strftime('%H:%M:%S')
                                         dStr = now.strftime('%d:%m:%Y')
-                                        f.writelines(f'\n{username},{dtString},{dStr}')
+                                        f.writelines(f'\n{dtString},{dStr}')
                           else:
                               pygame.mixer.music.stop()
                               COUNTER = 0
@@ -174,10 +170,8 @@ def main():
             
                 else:
                    pass
-            else:
-                st.warning("Incorrect Username/Password")
-        if st.sidebar.button("Log Out"):
-              st.subheader(" ")
+            
+        
 
     elif choice == "Signup" :
         st.subheader( "Create New Account")
