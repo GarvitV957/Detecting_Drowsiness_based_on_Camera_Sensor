@@ -31,7 +31,7 @@ After successful sign-up, user has to login into the system, and must select the
 
 ![7](https://user-images.githubusercontent.com/79044490/202721298-b68df2be-a20c-43b9-a004-813bb97aedb3.png)
 
-3.	Whenever a user feels drowsy or sleepy, the camera detects by capturing the eye aspect ratio, that is, whenever user’s eyes close greater than 70% of size of user’s eyes for more than 30 seconds, the buzzer will start buzzing.
+3.	Whenever a user feels drowsy or sleepy, the camera detects by capturing the eye aspect ratio, that is, whenever user’s eyes close greater than 70% of size of user’s eyes for more than 25 frames, the buzzer will start buzzing.
 
 ![8](https://user-images.githubusercontent.com/79044490/202721321-93087610-f67b-47a7-a955-974742619132.png)
 
