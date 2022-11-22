@@ -16,6 +16,7 @@ import pygame #For playing sound
 import dlib
 import sqlite3
 import Database
+import pyttsx3
 
 st.markdown("""
 <div class="container" style="background-color: #33FFFF; width: 800px; ">
@@ -58,7 +59,8 @@ def main():
 
     pygame.mixer.init()
     pygame.mixer.music.load('audio/warn.mp3')
-    cap = cv2.VideoCapture(0) #capture video
+    engine = pyttsx3.init()
+    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW) #capture video
 
     if choice == "Home" :
         st.subheader("Home")
@@ -108,7 +110,7 @@ def main():
                   
                   #Give some time for camera to initialize(not required)
                   #time.sleep(2)
-                  
+
                   while(True):
                       #Read each frame and flip it, and convert to grayscale
                       ret, frame = cap.read()
@@ -152,7 +154,9 @@ def main():
                               COUNTER += 1
                               #If no. of frames is greater than threshold frames,
                               if COUNTER >= EYE_ASPECT_RATIO_CONSEC_FRAMES:
-                                  pygame.mixer.music.play(-1)
+                                  #pygame.mixer.music.play(-1)
+                                  engine.say("WAKE UP!!!! Don't close your eyes")
+                                  engine.runAndWait()
                                   cv2.putText(frame, "Don't close your eyes", (100,470), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2)
                                   #time.sleep(2)
                                   with open('Warnings.csv', 'r+') as f:
@@ -160,7 +164,7 @@ def main():
                                         myDataList = f.readlines()
                                         dtString = now.strftime('%H:%M:%S')
                                         dStr = now.strftime('%d:%m:%Y')
-                                        f.writelines(f'\n{dtString},{dStr}')
+                                        f.writelines(f'\n{username}{dtString},{dStr}')
                           else:
                               pygame.mixer.music.stop()
                               COUNTER = 0
@@ -170,7 +174,8 @@ def main():
             
                 else:
                    pass
-            
+            else:
+                st.warning("Incorrect Username/Password")
         
 
     elif choice == "Signup" :
