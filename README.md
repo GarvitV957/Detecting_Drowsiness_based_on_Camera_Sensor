@@ -25,6 +25,7 @@ Here are the features of our application tested by our team members showing diff
 2.	Overview of Sign-up/Login page for user: When a user signs up for the first time, he/she must take his/her snap in the camera so that the eye aspect ratio of that can be saved in the database for future reference when that person comes afterwards.
 
 ![4](https://user-images.githubusercontent.com/79044490/202721207-f6be1737-4ed7-4c77-957f-5adbaed6f601.png)
+
 ![3](https://user-images.githubusercontent.com/79044490/202721166-f35ad40f-dc3e-4b89-82b0-f82b1b54a4be.png)
 
 After successful sign-up, user has to login into the system, and must select the STRART/STOP check box to start the process.
